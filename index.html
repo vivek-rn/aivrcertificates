@@ -166,8 +166,9 @@
       visibility: hidden;
     }
 
+  
     .loader-wheel {
-      animation: spin 1s infinite linear;
+      animation: spin 1s linear infinite ;
       border: 2px solid rgba(30, 30, 30, 0.5);
       border-left: 4px solid #fff;
       border-radius: 50%;
@@ -177,7 +178,7 @@
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-50%, -130%);
     }
 
     .loader-text {
@@ -202,14 +203,14 @@
 
     @keyframes spin {
       0% {
-        transform: rotate(0deg);
+        transform: translate(-50%, -130%) rotate(0deg);
       }
 
       100% {
-        transform: rotate(360deg);
+        transform: translate(-50%, -130%) rotate(360deg);
       }
     }
-
+    
     @keyframes load {
       0% {
         content: 'Loading';
